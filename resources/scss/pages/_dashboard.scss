@@ -1,0 +1,7 @@
+// Estilos para vistas generales e indicadores del sistema
+.dashboard-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  @include flex-center;
+}

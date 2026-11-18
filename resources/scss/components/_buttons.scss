@@ -1,0 +1,7 @@
+// Personalización de botones
+.btn {
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  @include transition-smooth;
+}

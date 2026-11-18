@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Report extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'tipo',
+        'fecha_inicio',
+        'fecha_fin',
+    ];
+
+    protected function casts(): array
+    {
+        return [
+            'fecha_inicio' => 'date',
+            'fecha_fin' => 'date',
+        ];
+    }
+
+    /**
+     * Relación: Un reporte es generado por un usuario (1:N inverso)
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}

@@ -1,0 +1,10 @@
+// Mixins de utilidad para respuestas rápidas y diseño responsivo
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition-smooth($prop: all, $time: 0.3s) {
+  transition: $prop $time ease-in-out;
+}

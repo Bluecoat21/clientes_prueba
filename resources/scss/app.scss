@@ -1,0 +1,22 @@
+// 1. Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+// 3. Base
+@import 'base/reset';
+@import 'base/typography';
+
+// 4. Layout
+@import 'layout/sidebar';
+@import 'layout/navbar';
+
+// 5. Components
+@import 'components/buttons';
+@import 'components/cards';
+
+// 6. Pages
+@import 'pages/dashboard';
+
+// 2. Importar Bootstrap directamente desde node_modules
+@import 'bootstrap/scss/bootstrap';
